@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Peças - Sistema de Qualidade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Sistema de Qualidade</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Cadastro de Peças</a></li>
+            <li><a href="relatorio_8d.html">Relatório 8D</a></li>
+            <li><a href="engenharia_qualidade.html">Engenharia da Qualidade</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="form-section">
+            <h2>Cadastro de Novas Peças</h2>
+            <form id="peca-form">
+                <input type="text" id="codigo-peca" placeholder="Código da Peça" required>
+                <input type="text" id="descricao-peca" placeholder="Descrição da Peça" required>
+                <input type="text" id="revisao-peca" placeholder="Revisão">
+                <button type="submit">Adicionar Peça</button>
+            </form>
+        </section>
+
+        <section class="table-container">
+            <h3>Peças Cadastradas</h3>
+            <table id="pecas-table">
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Descrição</th>
+                        <th>Revisão</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
